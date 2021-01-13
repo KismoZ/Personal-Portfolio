@@ -30,12 +30,13 @@ header {
     display: flex;
     justify-content: space-between;
     padding: 2em;
-
+    align-items: center;
     .logo {
         color: #41F2F2;
         font-weight: bold;
+        font-size: 20px;
     }
-
+    
     ul {
         display: flex;
 
@@ -44,6 +45,8 @@ header {
             padding: 0 1em;
         }
     }
+
+
 }
 
 .social-header, .hero-design{
@@ -76,7 +79,7 @@ header {
     margin-top: 2em;
 }
 
-section {
+section .skills-container{
     padding: 4em 2em;
     text-align: center;
 }
@@ -119,8 +122,8 @@ section {
     font-weight: 500;
     font-size: 0.9;
     line-height: 2em;
-    margin-bottom: 4em;
     color: #292929;
+    margin: 3em 2em 4em 2em;
 }
 
 .bordered {
@@ -135,7 +138,7 @@ section {
 
     background: white;
     padding: 2em;
-    border-radius: 1em;
+    border-radius: 2em;
     margin-bottom: 1em;
 
     .icon-container {
@@ -143,7 +146,6 @@ section {
         display: grid;
         place-content: center;
         margin: 0 auto;
-
         &.one {
             width: 50px;
         }
@@ -159,9 +161,12 @@ section {
         font-weight: bold;
         font-size: 1.25em;
     }
-
     .featured-desc {
-        margin-bottom: 2em;
+        font-weight: 500;
+        font-size: 0.9;
+        line-height: 2em;
+        margin: 3em 2em 4em 2em;
+        color: #292929;
     }
 }
 
@@ -171,7 +176,9 @@ section {
 
 .portfolio-container a img {
     margin-bottom: 2em;
+    margin-top: 2em;
 }
+
 
 @media only screen and (min-width: 800px) {
 

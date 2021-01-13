@@ -13,17 +13,17 @@
 
             <nav>
                 <ul>
-                    <li><a href="#">My work</a></li>
                     <li><a href="#">My skills</a></li>
+                    <li><a href="#">My work</a></li>
                     <li><a href="#">Hire Me!</a></li>
                 </ul>
             </nav>
         </header>
         <div class="social-header">
             <ul>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="assets/dribble.svg" alt="Dribble"></a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="assets/behance-logo.svg" alt="Behance"></a></li>
-                <li><a href="https://www.youtube.com/watch?v=dQw4w9WgXcQ" target="_blank"><img src="assets/twitter.svg" alt="Twitter"></a></li>
+                <li><a href="https://dribbble.com/KismoZ" target="_blank"><img src="assets/dribble.svg" alt="Dribble"></a></li>
+                <li><a href="https://www.behance.net/KhineLinKyaw/" target="_blank"><img src="assets/behance-logo.svg" alt="Behance"></a></li>
+                <li><a href="https://www.facebook.com/justvibinguy/" target="_blank"><img src="assets/facebook.svg" alt="Facebook"></a></li>
             </ul>
         </div>
     </div>
@@ -62,13 +62,13 @@
 
     <section class="featured">
         <div class="left">
-            <div class="inner transition2">
+            <div class="inner transition1">
                 <p class="subtitle">Featured Project</p>
-                <a href="#" class="featured-title">3D Designs & illustrations</a>
-                <p class="featured-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Inventore aliquid cumque numquam nisi repellendus, nesciunt perferendis dolorem laudantium saepe sit.</p>
+                <a href="#" class="featured-title">3D Designs & Illustrations</a>
+                <p class="featured-desc">Using industry-leading softwares such as Adobe Photoshop, Illustrator & Blender, I can create amazing graphics both in real world and abstract.</p>
             </div>
         </div>
-        <img class="transition2 bordered" src="assets/Wavey_2.png" alt="Wavy Vector">
+        <img class="transition1 bordered" src="assets/Wavey_2.png" alt="Wavy Vector">
     </section>
 
     <section class="skills">
@@ -79,21 +79,21 @@
                         <img src="assets/Box.svg" alt="3D Designs">
                     </div>
                     <p class="skill-title">3D Designs</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sit!</p>
+                    <p class="featured-desc skill-desc">An intermediate Blender user with half a year worth of experience, experienced in Hard-surface modeling, fluid & cloth simuations & realistic lighting. </p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container two">
                         <img src="assets/!DOCTYPE html.svg" alt="UX/UI & Frontend Development">
                     </div>
                     <p class="skill-title">UX/UI Designs & Frontend Development</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sit!</p>
+                    <p class="featured-desc skill-desc">Studying designs trends & building up my own creative style, I am eager to design and code a website for you!</p>
                 </li>
                 <li class="transition2">
                     <div class="icon-container three">
                         <img src="assets/Adobe-Ai-Ps.svg" alt="Adobe AI PS">
                     </div>
                     <p class="skill-title">Illustrations & Photo Retouching</p>
-                    <p class="featured-desc skill-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio, sit!</p>
+                    <p class="featured-desc skill-desc">Having a basic understanding in Adobe product such as Illustrator, Photoshop & Affer Effect, I can do simple image manipulations & Illustrations.</p>
                 </li>
             </ul>
         </div>
@@ -106,7 +106,7 @@
                 <div class="inner">
                     <p class="subtitle">3D Design Projects</p>
                     <p class="featured-title">Product Placement</p>
-                    <p class="featured-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse!</p>
+                    <p class="featured-desc">Wine Bottle mock-ups & 3D depiction of John Register's work</p>
                 </div>
             </div>
             <a href="#"><img class="bordered" src="assets/Portfolio.jpg" alt="Wine bottles & Chair Product Placement"></a>
@@ -117,7 +117,7 @@
                 <div class="inner">
                     <p class="subtitle">Personal Works</p>
                     <p class="featured-title">Realistic Rendering</p>
-                    <p class="featured-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse!</p>
+                    <p class="featured-desc">An empty school classroom</p>
                 </div>
             </div>
             <a href="#"><img class="bordered" src="assets/ClassRoom_NewYear_4.jpg" alt="A realistic 3D depiction of an empty classroom"></a>
@@ -128,19 +128,14 @@
                 <div class="inner">
                     <p class="subtitle">Advertisement for brands</p>
                     <p class="featured-title">Attracting customers</p>
-                    <p class="featured-desc">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Alias, esse!</p>
+                    <p class="featured-desc">An mock-up advert for Pronto600</p>
                 </div>
             </div>
             <a href="#"><img class="bordered" src="assets/Polaroid.jpg" alt="A mock-up Polaroid Advertisement for Pronto600"></a>
         </div>
 
     </section>
-    <script src="dist/smooth-scrollbar.js"></script>
-
-    <script>
-        var Scrollbar = window.Scrollbar;
-
-        Scrollbar.init(document.querySelector('#my-scrollbar'), options);
+    
     </script>
     <script src="index.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.6.0/gsap.min.js" integrity="sha512-1dalHDkG9EtcOmCnoCjiwQ/HEB5SDNqw8d4G2MKoNwjiwMNeBAkudsBCmSlMnXdsH8Bm0mOd3tl/6nL5y0bMaQ==" crossorigin="anonymous"></script>
@@ -172,6 +167,17 @@
             scale: 0.1,
             duration: 1,
             ease: Back.easeOut.config(1.7),
+        })
+
+        gsap.from(".transition1", {
+            scrollTrigger: {
+                trigger: ".transition1",
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.3,
+            stagger: 0.3,
         })
 
         gsap.from(".transition2", {
