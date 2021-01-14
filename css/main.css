@@ -91,12 +91,17 @@ header ul a {
   margin-top: 2em;
 }
 
-section .skills-container {
+section {
+  text-align: center;
+}
+
+.skills-container {
   padding: 4em 2em;
   text-align: center;
 }
 
 .featured {
+  margin: 0em 2em 0em 2em;
   position: relative;
 }
 
@@ -135,7 +140,7 @@ section .skills-container {
   font-size: 0.9;
   line-height: 2em;
   color: #292929;
-  margin: 3em 2em 4em 2em;
+  margin-right: 2em;
 }
 
 .bordered {
@@ -178,16 +183,17 @@ section .skills-container {
   font-size: 1.25em;
 }
 
-.skills-container ul li .featured-desc {
+.skills-container ul li .skill-desc {
   font-weight: 500;
   font-size: 0.9;
   line-height: 2em;
-  margin: 3em 2em 4em 2em;
   color: #292929;
+  margin: 1em 1em 1em 1em;
 }
 
 .portfolio {
   background: #f7f7f7;
+  padding: 0em 2em 0em 2em;
 }
 
 .portfolio-container a img {
@@ -208,7 +214,10 @@ section .skills-container {
   .left, .portfolio-left {
     display: -ms-grid;
     display: grid;
-    place-content: center;
+    place-content: left;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
   }
   .right {
     margin-left: 2em;
@@ -218,6 +227,9 @@ section .skills-container {
     margin-top: -6.5em;
     margin-bottom: -7em;
     padding-top: 7em;
+  }
+  section {
+    padding: 0em 4em 0em 4em;
   }
   .skills-container ul {
     display: -ms-grid;
@@ -293,7 +305,7 @@ section .skills-container {
     width: 20px;
   }
   section {
-    padding: 4em;
+    padding: 0em 4em 0em 4em;
   }
   .portfolio img {
     max-width: 600px;
