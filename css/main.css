@@ -61,6 +61,36 @@ header ul a {
   padding: 0 1em;
 }
 
+footer {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 2em;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+footer .logo {
+  color: #41F2F2;
+  font-weight: bold;
+  font-size: 20px;
+}
+
+footer ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+footer ul a {
+  display: block;
+  padding: 0 1em;
+}
+
 .social-header, .hero-design {
   display: none;
 }
@@ -211,7 +241,7 @@ section {
 }
 
 .about-me {
-  padding: 4em 2em 2em 2em;
+  padding: 4em 2em 4em 2em;
   position: relative;
   background-color: #6E00FF;
   display: -ms-grid;
@@ -223,13 +253,6 @@ section {
       -ms-flex-align: center;
           align-items: center;
   grid-gap: 2em;
-}
-
-.about-me .about-me-left {
-  border-radius: 15px;
-  border-style: solid;
-  border-width: 5px;
-  border-color: white;
 }
 
 .about-me .about-me-title {
@@ -248,6 +271,21 @@ section {
   max-width: 300px;
   -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.3);
+}
+
+.hire-me::before {
+  padding: unset;
+}
+
+.hire-me {
+  text-align: center;
+  font-size: 1.5em;
+  padding-top: 3em;
+  padding-bottom: 3em;
+}
+
+.hire-me a {
+  font-size: 2em;
 }
 
 @media only screen and (min-width: 800px) {
@@ -336,7 +374,13 @@ section {
   .nav-container header {
     background: #6700EE;
   }
+  .nav-container footer {
+    background: #6700EE;
+  }
   header {
+    padding: 2em 2em 2em 4em;
+  }
+  footer {
     padding: 2em 2em 2em 4em;
   }
   .social-header {
@@ -378,6 +422,9 @@ section {
   header {
     padding: 2em 2em 2em 10em;
   }
+  footer {
+    padding: 2em 2em 2em 10em;
+  }
   .social-header {
     padding: 2em 10em 2em 0em;
     display: block;
@@ -395,6 +442,9 @@ section {
 
 @media only screen and (min-width: 1550px) {
   header {
+    padding: 2em 2em 2em 20em;
+  }
+  footer {
     padding: 2em 2em 2em 20em;
   }
   .social-header {
