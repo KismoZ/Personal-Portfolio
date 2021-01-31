@@ -165,6 +165,10 @@ section {
   padding: 1.5em;
   border-radius: 2em;
   margin-bottom: 1.5em;
+  -webkit-box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1);
+          box-shadow: 7px 7px 15px rgba(0, 0, 0, 0.1);
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
 }
 
 .skills-container ul li .icon-container {
@@ -241,6 +245,8 @@ section {
   max-width: 300px;
   -webkit-box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.3);
           box-shadow: 0px 7px 20px rgba(0, 0, 0, 0.3);
+  -webkit-animation: mymove 5s infinite;
+          animation: mymove 5s infinite;
 }
 
 .hire-me::before {
@@ -487,6 +493,20 @@ section {
   to {
     -webkit-transform: translate(266px, 773px);
             transform: translate(266px, 773px);
+  }
+}
+
+@-webkit-keyframes mymove {
+  50% {
+    -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+  }
+}
+
+@keyframes mymove {
+  50% {
+    -webkit-box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
+            box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.5);
   }
 }
 /*# sourceMappingURL=main.css.map */
