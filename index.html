@@ -95,7 +95,7 @@
                 <p class="featured-desc">Using industry-leading softwares such as Adobe Photoshop, Illustrator & Blender, I can create amazing graphics both in real world and abstract.</p>
             </div>
         </div>
-        <img class="transition1 bordered" src="assets/Wavey_2.png" alt="Wavy Vector">
+        <video class="transition1 bordered video" src="assets/loop.mp4" muted loop autoplay alt="DERRK WINE Bottle"></video>
     </section>
 
     <section class="skills" id="skills">
@@ -163,9 +163,9 @@
 
     </section>
 
-    <section class="about-me" id="me">
-        <img class="portrait" src="assets/Profile.jpg" alt="A portrait of myself" >
-        <div class="about-me-left">
+    <section class="about-me transition4" id="me">
+        <img class="portrait" src="assets/Profile.jpg" alt="A portrait of myself" class="transition4d">
+        <div class="about-me-left" class="transition4">
             <h1 class="about-me-title">About Me,</h1>
             <p class="about-me-text">Hello! My name is Khine Lin Kyaw. I am an amateur 3D & Web design artist, currently employed at MPSG & Walking Brands creating beautiful & intuitive designs tailor-made for each individual customer. </p>
         </div>
@@ -246,6 +246,17 @@
         gsap.from(".transition3", {
             scrollTrigger: {
                 trigger: ".transition3",
+                start: "top bottom"
+            },
+            y: 50,
+            opacity: 0,
+            duration: 1.2,
+            stagger: 0.6,
+        })
+
+        gsap.from(".transition4", {
+            scrollTrigger: {
+                trigger: ".transition4",
                 start: "top bottom"
             },
             y: 50,

@@ -114,6 +114,10 @@ section {
   position: relative;
 }
 
+.featured .video {
+  width: 100%;
+}
+
 .featured::before {
   content: "";
   position: absolute;
@@ -238,6 +242,7 @@ section {
   color: #41F2F2;
   font-size: 1em;
   padding: 1em;
+  line-height: 2em;
 }
 
 .about-me .portrait {
